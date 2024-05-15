@@ -28,7 +28,7 @@ export default function Navbar() {
             <nav className="flex gap-12">
                 {
                     menus.map((l, i) => (
-                        <CustomLink href={l.href} title={l.name} />
+                        <CustomLink href={l.href} title={l.name} key={i} />
                     ))
                 }
             </nav>
